@@ -1,6 +1,6 @@
 "use client"
 
-import { Phone, Mail, UserCircle } from "lucide-react"
+import { Phone, Mail } from "lucide-react"
 import Image from "next/image"
 import { useInView } from "@/hooks/use-in-view"
 
@@ -27,14 +27,10 @@ export default function OwnerSection() {
           <Image
             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_6548_Original-AOoMMZAyViNex8Scev0j1QX08g8we3.jpeg"
             alt="India Trading Logo"
-            width={200}
-            height={100}
-            className="h-16 w-auto"
+            width={250}
+            height={120}
+            className="h-20 w-auto"
           />
-        </div>
-
-        <div className="mb-6 inline-flex h-20 w-20 items-center justify-center rounded-full bg-accent/20 ring-4 ring-accent/10">
-          <UserCircle className="h-12 w-12 text-accent" />
         </div>
 
         <h3 className="mb-4 text-4xl font-bold text-primary-foreground md:text-5xl">

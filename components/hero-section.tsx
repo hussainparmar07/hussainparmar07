@@ -6,22 +6,9 @@ import { useEffect, useRef, useState } from "react"
 export default function HeroSection() {
   const sectionRef = useRef<HTMLElement>(null)
   const [visible, setVisible] = useState(false)
-  const [currentSlide, setCurrentSlide] = useState(0)
-
-  const backgroundLogos = [
-    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_6548_Original-wFj5895uLz3y7ggTMAfvO3lwPO8Ku8.jpeg",
-    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_6548_Original-AOoMMZAyViNex8Scev0j1QX08g8we3.jpeg",
-  ]
 
   useEffect(() => {
     setVisible(true)
-  }, [])
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % backgroundLogos.length)
-    }, 5000)
-    return () => clearInterval(interval)
   }, [])
 
   return (
@@ -29,21 +16,14 @@ export default function HeroSection() {
       ref={sectionRef}
       className="relative flex min-h-[80vh] items-center justify-center overflow-hidden"
     >
-      {/* Background Logo Slider */}
-      <div className="absolute inset-0">
-        {backgroundLogos.map((logo, i) => (
-          <Image
-            key={i}
-            src={logo}
-            alt=""
-            fill
-            className={`object-contain opacity-8 transition-opacity duration-1000 ${
-              i === currentSlide ? "opacity-10" : "opacity-0"
-            }`}
-            aria-hidden="true"
-          />
-        ))}
-      </div>
+      {/* Background Image */}
+      <Image
+        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-02-18%20at%204.07.18%20PM-m4vIS1GgIg2B8kxZbMRzV8nHoHeSzx.jpeg"
+        alt=""
+        fill
+        className="object-cover"
+        priority
+      />
 
       {/* Dark Overlay with gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-primary/85 via-primary/75 to-primary/90" />
@@ -94,19 +74,7 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* Slider indicators */}
-      <div className="absolute bottom-24 left-1/2 flex -translate-x-1/2 gap-2">
-        {backgroundLogos.map((_, i) => (
-          <button
-            key={i}
-            onClick={() => setCurrentSlide(i)}
-            className={`h-2 rounded-full transition-all ${
-              i === currentSlide ? "w-8 bg-accent" : "w-2 bg-card/40"
-            }`}
-            aria-label={`Slide ${i + 1}`}
-          />
-        ))}
-      </div>
+
     </section>
   )
 }
