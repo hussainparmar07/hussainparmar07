@@ -37,11 +37,8 @@ export default function OwnerSection() {
           <UserCircle className="h-12 w-12 text-accent" />
         </div>
 
-        <p className="mb-2 text-sm font-semibold uppercase tracking-wider text-accent">
-          Distributor Owner
-        </p>
         <h3 className="mb-4 text-4xl font-bold text-primary-foreground md:text-5xl">
-          Abbass Chawda
+          India Trading
         </h3>
         <p className="mb-8 text-lg text-primary-foreground/80">
           Authorized Distributor &ndash; Hajoori{"'"}s Frootreet Ice Cream
@@ -49,11 +46,11 @@ export default function OwnerSection() {
 
         <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a
-            href="tel:+919978825222"
+            href="tel:+919978122753"
             className="inline-flex items-center gap-2 rounded-xl bg-accent px-6 py-3 font-medium text-accent-foreground transition-all hover:scale-105 hover:shadow-lg"
           >
             <Phone className="h-5 w-5" />
-            99788 25222
+            99781 22753
           </a>
           <a
             href="mailto:indiatrading2753@gmail.com"

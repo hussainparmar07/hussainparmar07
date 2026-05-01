@@ -44,7 +44,7 @@ const weddingOrdersData = [
 ]
 
 export default function WeddingOrdersSection() {
-  const [language, setLanguage] = useState<"en" | "gu" | "hi">("en")
+  const language: "en" | "gu" | "hi" = "en"
   const [activeSlide, setActiveSlide] = useState(0)
   const sliderRef = useRef<HTMLDivElement>(null)
   const { ref, inView } = useInView()
@@ -83,23 +83,6 @@ export default function WeddingOrdersSection() {
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
             Make your celebrations special with Hajoori's ice cream
           </p>
-        </div>
-
-        {/* Language Selector */}
-        <div className="mb-8 flex justify-center gap-2">
-          {(["en", "gu", "hi"] as const).map((lang) => (
-            <button
-              key={lang}
-              onClick={() => setLanguage(lang)}
-              className={`rounded-lg px-4 py-2 text-sm font-semibold transition-all ${
-                language === lang
-                  ? "bg-accent text-accent-foreground"
-                  : "bg-muted text-foreground hover:bg-muted/70"
-              }`}
-            >
-              {lang === "en" ? "English" : lang === "gu" ? "ગુજરાતી" : "हिंदी"}
-            </button>
-          ))}
         </div>
 
         {/* Slider Container */}
