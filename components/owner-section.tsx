@@ -1,0 +1,62 @@
+"use client"
+
+import { Phone, Mail } from "lucide-react"
+import Image from "next/image"
+import { useInView } from "@/hooks/use-in-view"
+
+export default function OwnerSection() {
+  const { ref, inView } = useInView()
+
+  return (
+    <section id="owner" className="relative overflow-hidden bg-primary py-20" ref={ref}>
+      {/* Subtle Background Logo */}
+      <Image
+        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_7637_Original-FTjSzg9DvSig2LbLkRgBLjF7CoEniC.jpeg"
+        alt=""
+        fill
+        className="object-contain opacity-[0.04]"
+        aria-hidden="true"
+      />
+
+      <div
+        className={`relative z-10 mx-auto max-w-3xl px-4 text-center transition-all duration-700 md:px-8 ${
+          inView ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
+        }`}
+      >
+        <div className="mb-8 inline-block">
+          <Image
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-02-18%20at%204.07.18%20PM-jHWLGruRtoURcFCN7SqcKQbISz1Jqc.jpeg"
+            alt="India Trading Logo"
+            width={280}
+            height={140}
+            className="h-24 w-auto"
+          />
+        </div>
+
+        <h3 className="mb-4 text-4xl font-bold text-primary-foreground md:text-5xl">
+          India Trading
+        </h3>
+        <p className="mb-8 text-lg text-primary-foreground/80">
+          Authorized Distributor &ndash; Hajoori{"'"}s Frootreet Ice Cream
+        </p>
+
+        <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
+          <a
+            href="tel:+919978122753"
+            className="inline-flex items-center gap-2 rounded-xl bg-accent px-6 py-3 font-medium text-accent-foreground transition-all hover:scale-105 hover:shadow-lg"
+          >
+            <Phone className="h-5 w-5" />
+            99781 22753
+          </a>
+          <a
+            href="mailto:indiatrading2753@gmail.com"
+            className="inline-flex items-center gap-2 rounded-xl border-2 border-primary-foreground/30 px-6 py-3 font-medium text-primary-foreground transition-colors hover:border-accent hover:bg-accent hover:text-accent-foreground"
+          >
+            <Mail className="h-5 w-5" />
+            indiatrading2753@gmail.com
+          </a>
+        </div>
+      </div>
+    </section>
+  )
+}
