@@ -67,7 +67,7 @@ export default function InquirySection() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     const text = `*Wholesale Inquiry*%0A%0A*Name:* ${form.name}%0A*Business:* ${form.business}%0A*Mobile:* ${form.mobile}%0A*Message:* ${form.message}`
-    window.open(`https://wa.me/919978825222?text=${text}`, "_blank")
+    window.open(`https://wa.me/919978122753?text=${text}`, "_blank")
   }
 
   return (

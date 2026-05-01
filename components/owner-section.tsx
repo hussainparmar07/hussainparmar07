@@ -25,11 +25,11 @@ export default function OwnerSection() {
       >
         <div className="mb-8 inline-block">
           <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_6548_Original-AOoMMZAyViNex8Scev0j1QX08g8we3.jpeg"
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-02-18%20at%204.07.18%20PM-jHWLGruRtoURcFCN7SqcKQbISz1Jqc.jpeg"
             alt="India Trading Logo"
-            width={250}
-            height={120}
-            className="h-20 w-auto"
+            width={280}
+            height={140}
+            className="h-24 w-auto"
           />
         </div>
 

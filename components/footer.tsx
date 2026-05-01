@@ -53,18 +53,11 @@ export default function Footer() {
             </h4>
             <div className="flex flex-col gap-3">
               <a
-                href="tel:+919978825222"
+                href="tel:+919978122753"
                 className="flex items-center gap-2 text-sm text-primary-foreground/70 transition-colors hover:text-accent"
               >
                 <Phone className="h-4 w-4 shrink-0" />
-                99788 25222
-              </a>
-              <a
-                href="tel:+917984434292"
-                className="flex items-center gap-2 text-sm text-primary-foreground/70 transition-colors hover:text-accent"
-              >
-                <Phone className="h-4 w-4 shrink-0" />
-                79844 34292
+                99781 22753
               </a>
               <a
                 href="mailto:indiatrading2753@gmail.com"
