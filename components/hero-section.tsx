@@ -24,6 +24,16 @@ export default function HeroSection() {
         className="object-cover"
         priority
       />
+      
+      {/* Hajoori Logo Watermark */}
+      <Image
+        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_6548_Original-wFj5895uLz3y7ggTMAfvO3lwPO8Ku8.jpeg"
+        alt=""
+        fill
+        className="object-contain opacity-10"
+        aria-hidden="true"
+      />
+      
       {/* Dark Overlay with gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-primary/85 via-primary/75 to-primary/90" />
 

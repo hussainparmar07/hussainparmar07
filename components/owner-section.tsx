@@ -23,6 +23,16 @@ export default function OwnerSection() {
           inView ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
         }`}
       >
+        <div className="mb-8 inline-block">
+          <Image
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_6548_Original-AOoMMZAyViNex8Scev0j1QX08g8we3.jpeg"
+            alt="India Trading Logo"
+            width={200}
+            height={100}
+            className="h-16 w-auto"
+          />
+        </div>
+
         <div className="mb-6 inline-flex h-20 w-20 items-center justify-center rounded-full bg-accent/20 ring-4 ring-accent/10">
           <UserCircle className="h-12 w-12 text-accent" />
         </div>
