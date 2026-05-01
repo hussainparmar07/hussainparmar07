@@ -4,6 +4,7 @@ import AboutSection from "@/components/about-section"
 import ServicesSection from "@/components/services-section"
 import ProductsSection from "@/components/products-section"
 import ContactSection from "@/components/contact-section"
+import WeddingOrdersSection from "@/components/wedding-orders-section"
 import InquirySection from "@/components/inquiry-section"
 import ReviewSection from "@/components/review-section"
 import OwnerSection from "@/components/owner-section"
@@ -19,6 +20,7 @@ export default function Home() {
       <ServicesSection />
       <ProductsSection />
       <ContactSection />
+      <WeddingOrdersSection />
       <InquirySection />
       <ReviewSection />
       <OwnerSection />
