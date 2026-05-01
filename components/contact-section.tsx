@@ -36,18 +36,23 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h4 className="mb-1 font-semibold text-card-foreground">Phone</h4>
-                  <a
-                    href="tel:+919978825222"
-                    className="block text-muted-foreground transition-colors hover:text-accent"
-                  >
-                    99788 25222
-                  </a>
-                  <a
-                    href="tel:+917984434292"
-                    className="block text-muted-foreground transition-colors hover:text-accent"
-                  >
-                    79844 34292
-                  </a>
+                  <div className="flex flex-col gap-1">
+                    <div>
+                      <a
+                        href="tel:+919978122753"
+                        className="block text-muted-foreground transition-colors hover:text-accent"
+                      >
+                        99781 22753
+                      </a>
+                      <span className="text-xs text-accent font-medium">Primary</span>
+                    </div>
+                    <a
+                      href="tel:+919978825222"
+                      className="block text-muted-foreground transition-colors hover:text-accent"
+                    >
+                      99788 25222
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
